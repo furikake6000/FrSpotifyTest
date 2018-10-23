@@ -4,6 +4,9 @@ Rails.application.routes.draw do
 
   get '/search', to: 'static_pages#search'
 
+  # Spotify API callback
+  get '/auth/spotify/callback', to: 'users#spotify'
+
   # 固定ページ
   get '/help', to: 'static_pages#help'
 end
