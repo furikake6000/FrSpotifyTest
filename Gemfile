@@ -44,6 +44,9 @@ gem 'paranoia'
 gem 'serviceworker-rails'
 gem 'webpush'
 
+# Security(Encryption)
+gem 'rbnacl', '~>5.0'
+
 group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
   gem 'capybara'
