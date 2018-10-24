@@ -14,6 +14,8 @@ class UsersController < ApplicationController
     # !!!NOTICE!!! User's "spotifydata" is raw hash data.
     # This is not safe for public use. Be sure to encrypt it in future.
 
+    login_as @user
+
     redirect_to root_path
   end
 end
