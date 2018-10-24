@@ -9,7 +9,7 @@ table
         th name
         th type
         
-    - current_user.spotify.devices.each do |d|
+    - spotify_user(current_user).devices.each do |d|
         tr
             td #{d.id}
             td #{d.is_active}

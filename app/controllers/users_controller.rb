@@ -8,7 +8,7 @@ class UsersController < ApplicationController
     @user = User.create(
       name: authdata.display_name,
       email: authdata.email,
-      spotifydata: authdata.to_hash
+      spotifydata: spotifyuser_to_json(authdata)
     )
 
     # !!!NOTICE!!! User's "spotifydata" is raw hash data.
